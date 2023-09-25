@@ -10,7 +10,7 @@ Paid subscription unlocks exclusive Content and helps our SaaS platform vision.
 
 ## User Involvement
 
-After trials they can easely sign up using stripe so i would have easy acces to premium content as part of our strategy is to make the platfform become a future saas solution.
+After trials they can easely sign up using stripe, the user would have easy acces to premium content as part of our strategy is to make the platfform become a future saas solution.
 
 ## User Stories
 
