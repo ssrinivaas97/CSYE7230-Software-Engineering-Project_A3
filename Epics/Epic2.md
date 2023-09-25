@@ -23,9 +23,11 @@ In this user story:
 Role: The trial user.
 Outcome: Continued billing after trial using Stripe.
 Benefit: Access to paid content going forward while helping us build an SAAS solution in the future.
+
+
 <=================>
 
-User Story[2]: Admin
+User Story[2]: A subscriber
 
 I want an easy opt-in process via stripe at the expiration of my free trail.
 
