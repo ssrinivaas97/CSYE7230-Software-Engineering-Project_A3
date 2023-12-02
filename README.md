@@ -37,12 +37,19 @@ Create a .env.local file in the root directory of your project and add the follo
 env
 
 PLANETSCALE_DB_URL=your_planetscale_db_url
+
 STRIPE_API_KEY=your_stripe_api_key
+
 YOUTUBE_API_KEY=your_youtube_api_key
+
 UNSPLASH_API_KEY=your_unsplash_api_key
+
 OPENAI_API_KEY=your_openai_api_key
+
 GOOGLE_CLIENT_ID=your_google_client_id
+
 GOOGLE_CLIENT_SECRET=your_google_client_secret
+
 Replace your_* with your actual API keys and credentials.
 
 ## Running the Application
