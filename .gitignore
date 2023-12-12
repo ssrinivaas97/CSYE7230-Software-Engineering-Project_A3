@@ -7,6 +7,7 @@
 
 # testing
 /coverage
+.env
 
 # next.js
 /.next/
@@ -25,7 +26,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-# ignore env
+.env*.local
 .env
 
 # vercel

@@ -1,7 +1,7 @@
 // /api/chapter/getInto
 
 import { prisma } from "@/lib/db";
-import { strict_output } from "@/lib/gpt";
+import { strict_output} from "@/lib/gpt";
 import {
   getQuestionsFromTranscript,
   getTranscript,
@@ -13,7 +13,6 @@ import { z } from "zod";
 const bodyParser = z.object({
   chapterId: z.string(),
 });
-
 
 export async function POST(req: Request, res: Response) {
   try {
@@ -35,16 +34,18 @@ export async function POST(req: Request, res: Response) {
     }
     const videoId = await searchYoutube(chapter.youtubeSearchQuery);
     let transcript = await getTranscript(videoId);
-    let maxLength = 400;
+
+    let maxLength = 500;
     transcript = transcript.split(" ").slice(0, maxLength).join(" ");
 
     const { summary }: { summary: string } = await strict_output(
       "You are an AI capable of summarising a youtube transcript",
-      "summarise strictly within 250 words or less and do not talk of the sponsors or anything unrelated to the main topic, also do not introduce what the summary is about. This is the format to return json data -                  { summary : a string enclosed within double quotes, and strictly no other double quotes should be present within this string content, except the exterior or the wrapping double quotes of the json data }. \n" +
+      "summarise in 250 words or less and do not talk of the sponsors or anything unrelated to the main topic, also do not introduce what the summary is about.The transcript is provided below. The summary json data that is returned,should not contain any special characters inside. Make sure you replace them with just a white space.\n\n" +
         transcript,
       { summary: "summary of the transcript" }
     );
 
+    
     const questions = await getQuestionsFromTranscript(
       transcript,
       chapter.name
@@ -75,8 +76,9 @@ export async function POST(req: Request, res: Response) {
         summary: summary,
       },
     });
-    return NextResponse.json({videoId, transcript, summary});
+
     // return NextResponse.json({ success: true });
+    return NextResponse.json({ transcript, summary});
   } catch (error) {
     if (error instanceof z.ZodError) {
       return NextResponse.json(

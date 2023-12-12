@@ -1,0 +1,41 @@
+/* Home.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    background: url('/path-to-your-image.jpg') no-repeat center center fixed; 
+    background-size: cover;
+  }
+  
+  /* Adding an overlay with a slight dark background to make text readable */
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(55, 55, 95, 0.7); /* semi-transparent overlay */
+    backdrop-filter: blur(5px); /* This will blur whatever is behind the overlay */
+    z-index: -1;
+  }
+  
+  /* Other styles */
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .paragraph {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  
