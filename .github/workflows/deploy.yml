@@ -23,11 +23,15 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key && chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key ${{ secrets.USER_NAME }}@${{ secrets.SSH_HOST }} '
           cd /root/CSYE7230FinalCopy &&
-          git reset --hard &&
-          git checkout main &&
-          git pull origin main &&
-          cp /root/CSYE7230-Software-Engineering-Project_A3 /root/CSYE7230FinalCopy/.env &&
-          docker-compose down &&
-          docker-compose rm -fsv &&
-          docker-compose up --build -d
+          if [ -d ".git" ]; then
+            git reset --hard &&
+            git checkout main &&
+            git pull origin main &&
+            cp /root/CSYE7230-Software-Engineering-Project_A3 /root/CSYE7230FinalCopy/.env &&
+            docker-compose down &&
+            docker-compose rm -fsv &&
+            docker-compose up --build -d
+          else
+            echo "Not a git repository";
+          fi
           '
