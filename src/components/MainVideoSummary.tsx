@@ -14,6 +14,7 @@ const MainVideoSummary = ({
   chapter,
   chapterIndex,
 }: Props) => {
+  const isSummaryAvailable = chapter.summary && chapter.summary.trim().length > 0;
   return (
     <div className="flex-[2] mt-16">
       <h4 className="text-sm uppercase text-secondary-foreground/60">
@@ -28,7 +29,13 @@ const MainVideoSummary = ({
       />
       <div className="mt-4">
         <h3 className="text-3xl font-semibold">Summary</h3>
-        <p className="mt-2 text-secondary-foreground/80">{chapter.summary}</p>
+        {isSummaryAvailable ? (
+          <p className="mt-2 text-secondary-foreground/80">{chapter.summary}</p>
+        ) : (
+          <p className="mt-2 text-secondary-foreground/80">
+            Hi there, I tried to generate a summary, but I didn't get a transcript from my buddy. So excuse us for this chapter :) .
+          </p>
+        )}
       </div>
     </div>
   );
