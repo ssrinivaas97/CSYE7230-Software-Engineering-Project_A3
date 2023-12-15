@@ -39,8 +39,8 @@ export async function POST(req: Request, res: Response) {
     transcript = transcript.split(" ").slice(0, maxLength).join(" ");
 
     const { summary }: { summary: string } = await strict_output(
-      "You are an AI capable of summarising a youtube transcript",
-      "summarise in 250 words or less and do not talk of the sponsors or anything unrelated to the main topic, also do not introduce what the summary is about.The transcript is provided below. The summary json data that is returned,should not contain any special characters inside. Make sure you replace them with just a white space.\n\n" +
+      "You are an AI capable of summarising a youtube transcript. I should not see unexpected token error in my console when summary is generated. Make sure to adhere to the output format. ",
+      "summarise in 250 words or less and do not talk of the sponsors or anything unrelated to the main topic, also do not introduce what the summary is about. Strictly adhere to the format needed. Summarize so that user can grasp the key points about the video\n" +
         transcript,
       { summary: "summary of the transcript" }
     );
