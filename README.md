@@ -1,4 +1,5 @@
 ## AI Learning Platform
+YOU CAN CHECK OUT THE APP AT : [https://assistedinstructai.anirudhvijayaraghavan.me](url)
 
 AI Learning Platform is a Next.js application designed to provide an interactive and comprehensive environment for learning and exploring various aspects of Artificial Intelligence. It integrates a multitude of APIs including PlanetScale DB, Stripe, YouTube, Unsplash, OpenAI, and Google OAuth to offer a diverse and enriched user experience.
 
