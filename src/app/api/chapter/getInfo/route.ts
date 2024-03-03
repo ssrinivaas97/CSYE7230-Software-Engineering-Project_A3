@@ -1,4 +1,5 @@
 // /api/chapter/getInto
+//gsecondroute
 
 import { prisma } from "@/lib/db";
 import { strict_output} from "@/lib/gpt";
