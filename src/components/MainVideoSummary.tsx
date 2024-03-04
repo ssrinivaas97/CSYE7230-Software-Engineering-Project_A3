@@ -27,13 +27,14 @@ const MainVideoSummary = ({
         src={`https://www.youtube.com/embed/${chapter.videoId}`}
         allowFullScreen
       />
-      <div className="mt-4">
+       <div className="mt-4">
         <h3 className="text-3xl font-semibold">Summary</h3>
         {isSummaryAvailable ? (
           <p className="mt-2 text-secondary-foreground/80">{chapter.summary}</p>
         ) : (
           <p className="mt-2 text-secondary-foreground/80">
-            Hi there, I tried to generate a summary, but I didn't get a transcript from my buddy. So excuse us for this chapter :) .
+            Hi there, I tried to generate a summary, but somewhere I'm having difficulty in generation.
+            Please excuse for this chapter, as I'm still in the developmental stage.
           </p>
         )}
       </div>
