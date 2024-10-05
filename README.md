@@ -1,3 +1,11 @@
+#Details
+•	Led the creation of a cutting-edge AI Assisted Learning Platform. Adopted an 3-tier architecture with MVC pattern, ensuring clear separation of concerns for easy maintenance and robust security. Applied SDLC principles for efficient project management.
+•	Engineered a secure and scalable backend. Implemented strong user authentication using NextAuth and efficient database management with PlanetScale (MySQL) and Prisma ORM.
+•	Developed an AI-leveraged course generation system utilizing RESTful APIs. Integrated the OpenAI API to dynamically generate relevant courses and chapters based on user input. Incorporated the YouTube API to fetch and display relevant videos for each chapter.
+•	Utilized GitHub Actions for efficient CI/CD, ensuring smooth and continuous integration and deployment. Hosted the platform on DigitalOcean. Employed Next.js with Tailwind CSS for a sleek, responsive user interface. Leveraged ShadCN to manage UI components.
+•	Implemented well-structured prompts, using persona pattern as a case study of prompt engineering, to generate course recommendations, quizzes, and summaries of YouTube transcripts.
+
+
 ## AI Learning Platform
 YOU CAN CHECK OUT THE APP AT : [https://assistedinstructai.anirudhvijayaraghavan.me](https://assistedinstructai.anirudhvijayaraghavan.me)
 
