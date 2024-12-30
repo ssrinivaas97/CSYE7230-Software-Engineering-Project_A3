@@ -7,6 +7,7 @@
 
 ## Application Demo
 Check out our presentation here : 
+[![Video Title](https://img.youtube.com/vi/lngtD_pHc_w/0.jpg)](https://www.youtube.com/watch?v=lngtD_pHc_w)
 
 https://www.youtube.com/watch?v=lngtD_pHc_w
 
