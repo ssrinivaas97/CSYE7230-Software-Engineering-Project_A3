@@ -5,9 +5,13 @@
 •	Utilized GitHub Actions for efficient CI/CD, ensuring smooth and continuous integration and deployment. Hosted the platform on DigitalOcean. Employed Next.js with Tailwind CSS for a sleek, responsive user interface. Leveraged ShadCN to manage UI components.
 •	Implemented well-structured prompts, using persona pattern as a case study of prompt engineering, to generate course recommendations, quizzes, and summaries of YouTube transcripts.
 
+## Application Demo
+Check out our presentation here : 
+
+https://www.youtube.com/watch?v=lngtD_pHc_w
 
 ## AI Learning Platform
-YOU CAN CHECK OUT THE APP AT : [https://assistedinstructai.anirudhvijayaraghavan.me](https://assistedinstructai.anirudhvijayaraghavan.me)
+YOU CAN CHECK OUT THE APP AT  : [https://assistedinstructai.anirudhvijayaraghavan.me](https://assistedinstructai.anirudhvijayaraghavan.me)
 
 AI Learning Platform is a Next.js application designed to provide an interactive and comprehensive environment for learning and exploring various aspects of Artificial Intelligence. It integrates a multitude of APIs including PlanetScale DB, Stripe, YouTube, Unsplash, OpenAI, and Google OAuth to offer a diverse and enriched user experience.
 
